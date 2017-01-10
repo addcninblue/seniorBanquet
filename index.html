@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Raleway:400" rel="stylesheet">
+  <link rel="stylesheet" href="css/index.css" media="all">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/index.js"></script>
+</head>
+<body>
+  <div id="page">
+    <div id="picture"></div>
+    <h1 id="left">CSF</h1>
+    <h1 id="right">Senior Banquet</h1>
+    <div id="main-content">
+      <div id="content">
+        <h1>You are cordially invited to CSF's annual Senior Banquet.</h1>
+        <h2>Please RSVP below:</h2>
+
+        <div id="email">
+          <form id="email-form" action="https://formspree.io/addison95132@gmail.com" method="POST">
+            <input id="email-name" placeholder="ID Number" type="text" name="name">
+            <input id="email-button" type="hidden" name="_next" value="thanks" />
+            <input type="hidden" name="_subject" value="Senior Banquet" />
+            <input id="button" type="submit" value="Send">
+          </form>
+        </div>
+
+      </div>
+    </div>
+    <div id="thanks"></div>
+  </div>
+</body>
+</html>

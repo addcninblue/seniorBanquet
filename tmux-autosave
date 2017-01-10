@@ -1,0 +1,23 @@
+#!/usr/bin/zsh
+
+SESSION="seniorBanquet"
+
+tmux -2 new-session -d -s $SESSION
+
+tmux new-window -t $SESSION:1 -n 'compilers'
+tmux split-window -h
+tmux select-pane -t 0
+tmux send-keys "caddy" C-m
+tmux select-pane -t 1
+tmux send-keys "cd css" C-m
+tmux send-keys "sass --watch index.scss:index.css" C-m
+tmux split-window -v
+tmux send-keys "cd js" C-m
+tmux send-keys "while ((1)) {coffee -cw index.coffee}" C-m
+
+# Set default window
+tmux select-window -t $SESSION:0
+tmux send-keys "vim index.html css/index.scss js/index.coffee"
+
+# Attach to session
+tmux -2 attach-session -t $SESSION

@@ -1,0 +1,125 @@
+body {
+  margin: 0; }
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3vw; }
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2vw; }
+
+#page {
+  overflow: hidden;
+  position: relative;
+  height: 100vh; }
+
+#picture {
+  background-image: url("../res/csfimage.png");
+  height: 20vw;
+  width: 20vw;
+  background-size: 20vw 20vw;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 5vw;
+  margin: auto;
+  display: none; }
+
+#left {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8vw;
+  float: right;
+  left: 10vw;
+  width: 50vw;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 0vh;
+  line-height: 0vh;
+  text-align: center;
+  margin: auto;
+  display: none; }
+
+#right {
+  font-family: 'Raleway', sans-serif;
+  font-size: 4vw;
+  left: 55vw;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 0vh;
+  line-height: 0vh;
+  text-align: center;
+  margin: auto;
+  display: none; }
+
+#main-content {
+  width: 0vw;
+  height: 0vh;
+  border: 0.5vh solid black;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute; }
+
+#content {
+  display: none; }
+
+#content h1 {
+  text-align: center;
+  margin-left: 1vw;
+  margin-right: 1vw; }
+
+#content h2 {
+  text-align: center; }
+
+#email {
+  height: 40vh;
+  text-align: center;
+  position: relative; }
+
+#email-form {
+  height: 50vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute; }
+
+#email-name {
+  border: 0.5vw black solid;
+  clear: both;
+  position: absolute;
+  height: 10vh;
+  top: 0;
+  bottom: 20vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 20vw;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 5vh; }
+
+#button {
+  border: 0.5vw black solid;
+  clear: both;
+  position: absolute;
+  height: 6vh;
+  top: 10vh;
+  bottom: 0vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 6vw;
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 3vh; }
+
+/*# sourceMappingURL=index.css.map */
