@@ -7,6 +7,11 @@
   <link rel="stylesheet" href="css/index.css" media="all">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="js/index.js"></script>
+  <script type="text/javascript">
+    if (screen.width <= 699) {
+      document.location = "mobile.html";
+    }
+  </script>
 </head>
 <body>
   <div id="page">
@@ -19,11 +24,17 @@
         <h2>Please RSVP below:</h2>
 
         <div id="email">
-          <form id="email-form" action="https://formspree.io/addison95132@gmail.com" method="POST">
+          <!-- <form id="email-form" action="https://formspree.io/addison95132@gmail.com" method="POST"> -->
+          <form id="email-form" action="https://formspree.io/chanaddison1995@students.esuhsd.org" method="POST">
             <input id="email-name" placeholder="ID Number" type="text" name="name">
+            <div id="radio-buttons">
+              <input id="option1" class="radio" type="radio" name="selection" value="1" checked><label for="option1"><span></span>Attending Senior Banquet</label><br>
+              <input id="option2" class="radio" type="radio" name="selection" value="2"><label for="option2"><span></span>Not attending, but would like award.</label><br>
+              <input id="option3" class="radio" type="radio" name="selection" value="3"><label for="option3"><span></span>Would not like awards.</label><br>
+            </div>
             <input id="email-button" type="hidden" name="_next" value="thanks" />
             <input type="hidden" name="_subject" value="Senior Banquet" />
-            <input id="button" type="submit" value="Send">
+            <input id="send" type="submit" value="Send">
           </form>
         </div>
 

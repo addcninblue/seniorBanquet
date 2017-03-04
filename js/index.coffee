@@ -12,5 +12,6 @@ $ ->
 	
 	$("#content").delay(5500).fadeIn()
 
-	$("email-button").click ->
-		thanks()
+	$("#button").click ->
+		$("#email-button").val("thanks#" + $("#email-name").val())
+		console.log("thanks#" + $("#email-name").text())

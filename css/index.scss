@@ -1,4 +1,5 @@
 $debugMode : false;
+$teal : #2aa198;
 
 body {
   margin: 0;
@@ -119,7 +120,8 @@ h2 {
   clear: both;
   position: absolute;
   height: 10vh;
-  top: 0; bottom: 20vh; left: 0; right: 0;
+  top: 0; bottom: 20vh; left: 0; right: 27vw;
+  // top: 0; bottom: 20vh; left: 25vw; right: 0;
   margin: auto;
   width: 20vw;
   text-align: center;
@@ -128,7 +130,7 @@ h2 {
   font-size: 5vh;
 }
 
-#button {
+#send {
   border: 0.5vw black solid;
   clear: both;
   position: absolute;
@@ -140,4 +142,50 @@ h2 {
   background-color: black;
   color: white;
   font-size: 3vh;
+}
+
+input[type=radio]{
+  width   : 28px;
+  margin  : 0;
+  padding : 0;
+  opacity : 0;
+}
+
+input[type=radio] + label{
+  color: black;
+  // display      : inline-block;
+  margin-left  : -28px;
+  padding-left : 28px;
+  background   : url('res/circles.res') no-repeat 0 0;
+  line-height  : 24px;
+
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5vw;
+}
+
+input[type="radio"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    cursor:pointer;
+    border-radius:  50%;
+}
+
+input[type="radio"] + label span {
+     background-color:black;
+}
+
+input[type="radio"]:checked + label span {
+     background-color:$teal;
+}
+
+#radio-buttons {
+  position: absolute;
+  top: 9vh; bottom: 0; left: 0; right: 0;
+  top: 9vh; bottom: 20vh; left: 21vw; right: 0;
+  // background-color: black;
+  // width: 20vw;
+  text-align: left;
 }

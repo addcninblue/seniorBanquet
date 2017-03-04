@@ -11,8 +11,9 @@
       width: "50vw"
     }, 1000);
     $("#content").delay(5500).fadeIn();
-    return $("email-button").click(function() {
-      return thanks();
+    return $("#button").click(function() {
+      $("#email-button").val("thanks#" + $("#email-name").val());
+      return console.log("thanks#" + $("#email-name").text());
     });
   });
 
