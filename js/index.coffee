@@ -1,4 +1,24 @@
 $ ->
+	names = {
+		1234 : "testing",
+		71609985 : "Emily",
+		71609662 : "Sarah",
+		71609946 : "Nancy",
+		71609947 : "Cindy",
+		71612099 : "Nancy",
+		71609893 : "Hannah",
+		53053043 : "Tiffany",
+		53052089 : "Dorothy",
+		71612580 : "Danielle",
+		71610661 : "Jason",
+		71610102 : "Aaron",
+		71609798 : "Lyann",
+		71614871 : "Angela",
+		71610052 : "Melody",
+		71609834 : "Elaine",
+		71609866 : "Kristi",
+	}
+	console.log(names[7160998])
 	$("#main-content").animate
 		height: "75vh",
 		1000
@@ -12,6 +32,12 @@ $ ->
 	
 	$("#content").delay(5500).fadeIn()
 
-	$("#button").click ->
-		$("#email-button").val("thanks#" + $("#email-name").val())
-		console.log("thanks#" + $("#email-name").text())
+	$("#send").click (e) ->
+		if (names[$("#email-name").val()]?)
+			e.preventDefault()
+			$("#email-button").val("thanks#" + names[$("#email-name").val()])
+			console.log("thanks#" + names[$("#email-name").val()])
+			console.log(names[$("email-name").val()])
+		else
+			e.preventDefault()
+			console.log("fail")
