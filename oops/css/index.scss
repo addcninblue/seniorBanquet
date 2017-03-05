@@ -1,0 +1,31 @@
+body {
+  position: relative;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5vw;
+  position: absolute;
+  top: 10vh;
+  bottom: 0vh;
+  margin: auto;
+  height: 50vh;
+  width: 100vw;
+  line-height: 90vh;
+  vertical-align: middle;
+  text-align: center;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4vw;
+  position: absolute;
+  top: 100vh;
+  bottom: 0vh;
+  margin: auto;
+  height: 20vh;
+  width: 100vw;
+  vertical-align: middle;
+  text-align: center;
+}
