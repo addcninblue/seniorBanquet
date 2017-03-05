@@ -37,7 +37,7 @@ $ ->
 		if (names[$("#email-name").val()]?)
 			# e.preventDefault()
 			$("#email-button").val("thanks#" + names[$("#email-name").val()])
-			console.log("thanks#" + names[$("#email-name").val()])
+			console.log("seniorBanquet/thanks/index.html#" + names[$("#email-name").val()])
 			# window.location.href = "./thanks/index.html#" + names[$("#email-name").val()]
 		else
 			e.preventDefault()
