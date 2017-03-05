@@ -55,8 +55,8 @@ h2 {
   display: none; }
 
 #main-content {
-  width: 0vw;
-  height: 0vh;
+  width: 50vw;
+  height: 75vh;
   border: 0.5vh solid black;
   top: 0;
   bottom: 0;
@@ -64,9 +64,6 @@ h2 {
   right: 0;
   margin: auto;
   position: absolute; }
-
-#content {
-  display: none; }
 
 #content h1 {
   text-align: center;

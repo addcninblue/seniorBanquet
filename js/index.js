@@ -4,6 +4,7 @@
     var names;
     names = {
       1234: "testing",
+      71609761: "Tina",
       71609985: "Emily",
       71609662: "Sarah",
       71609946: "Nancy",
@@ -34,13 +35,12 @@
     $("#content").delay(5500).fadeIn();
     return $("#send").click(function(e) {
       if ((names[$("#email-name").val()] != null)) {
-        e.preventDefault();
         $("#email-button").val("thanks#" + names[$("#email-name").val()]);
-        console.log("thanks#" + names[$("#email-name").val()]);
-        return console.log(names[$("email-name").val()]);
+        return console.log("thanks#" + names[$("#email-name").val()]);
       } else {
         e.preventDefault();
-        return console.log("fail");
+        console.log("fail");
+        return window.location.href = "./oops";
       }
     });
   });
