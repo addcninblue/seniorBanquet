@@ -1,0 +1,17 @@
+body {
+  position: relative;
+  overflow: hidden; }
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 6vh;
+  position: absolute;
+  top: 70vh;
+  bottom: 0vh;
+  margin: auto;
+  height: 20vh;
+  width: 100vw;
+  vertical-align: middle;
+  text-align: center; }
+
+/*# sourceMappingURL=index.css.map */
