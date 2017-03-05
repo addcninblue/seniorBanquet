@@ -141,7 +141,7 @@ input[type="radio"] + label span {
   display: inline-block;
   width: 19px;
   height: 19px;
-  margin: -1px 4px 0 0;
+  margin: -10px 4px 0 0;
   vertical-align: middle;
   cursor: pointer;
   border-radius: 50%; }
@@ -154,14 +154,16 @@ input[type="radio"]:checked + label span {
 
 #radio-buttons {
   position: absolute;
-  top: 9vh;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  top: 9vh;
+  top: 10vh;
   bottom: 20vh;
   left: 21vw;
   right: 0;
   text-align: left; }
+
+#disclaimer {
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  left: 3vw;
+  top: -1vh; }
 
 /*# sourceMappingURL=index.css.map */
