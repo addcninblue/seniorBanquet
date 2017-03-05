@@ -35,7 +35,7 @@
     $("#content").delay(5500).fadeIn();
     return $("#send").click(function(e) {
       if ((names[$("#email-name").val()] != null)) {
-        $("#email-button").val("thanks#" + names[$("#email-name").val()]);
+        $("#email-button").val("seniorBanquet/thanks/index.html#" + names[$("#email-name").val()]);
         return console.log("seniorBanquet/thanks/index.html#" + names[$("#email-name").val()]);
       } else {
         e.preventDefault();
