@@ -18,6 +18,7 @@ $ ->
 		71610052 : "Melody",
 		71609834 : "Elaine",
 		71609866 : "Kristi",
+		71610512 : "Sean",
 	}
 	options = {
 		1: "Attending Senior Banquet",
